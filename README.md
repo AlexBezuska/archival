@@ -25,5 +25,5 @@ brew install exiftool
 
 * Commands (from the terminal inside the archival directory)
  * `npm run extract` - extracts all image files recuresively inside souce and places them flat in destination
- * `fix-filenames` - runs in the destination folder and renames all photos in this format: devicename_date.extension
- * `remove-small` - runs in destination directory and removes all files under the minimum width and height thresholds set in config.json
+ * `npm run fix-filenames` - runs in the destination folder and renames all photos in this format: devicename_date.extension
+ * `npm run remove-small` - runs in destination directory and removes all files under the minimum width and height thresholds set in config.json
