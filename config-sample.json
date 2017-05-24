@@ -1,0 +1,16 @@
+{
+  "verboseMode": true,
+  "restrictSize": false,
+  "sizeMinWidth": 768,
+  "sizeMinHeight": 768,
+  "photosLibrary": "/some/directory/",
+  "imageFileTypes": [
+    ".jpg",
+    ".JPG",
+    ".jpeg",
+    ".png",
+    ".PNG",
+    ".gif"
+  ],
+  "destination": "/place/to/store/photos/"
+}
