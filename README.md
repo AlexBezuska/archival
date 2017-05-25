@@ -9,20 +9,15 @@ For photos this tool can also rename/ store them based on year / month / day and
 
 ### Prerequisites
 
-* Node.js
-  * [Install Node.js](https://nodejs.org/en/)
-* exiftool
- * Mac Installation:
-  * [Install Homebrew](https://brew.sh/)
-  * In your terminal run
-```
-brew install exiftool
-```
-* Ubuntu Installation:
- * In your terminal run
-```
-sudo apt install exiftool
-```
+- Node.js
+  - [Install Node.js](https://nodejs.org/en/)
+- exiftool
+  - Mac Installation:
+	  - [Install Homebrew](https://brew.sh/)
+	  - In your terminal run `brew install exiftool`
+
+  - Ubuntu Installation:
+	  - In your terminal run `sudo apt install exiftool`
 
 
 
