@@ -2,28 +2,57 @@ var fs = require("fs");
 var shell = require("shelljs");
 var config = require("./config");
 
-var files = {};
 
-for (var i = 0; i < config.imageFileTypes.length; i++) {
-  files[config.imageFileTypes[i]] = getFilesIn(config.photosLibrary, config.imageFileTypes[i]);
-  console.log(config.imageFileTypes[i], files[config.imageFileTypes[i]].length);
+if (!config.imageFileTypes && !config.videoFileTypes) {
+  console.log("no 'imageFileTypes' or 'videoFileTypes' set in config.json... doing nothing.");
+}
+
+if (!config.imageDestination && !config.videoDestination) {
+  console.log("no 'imageDestination' or 'videoDestination' set in config.json... doing nothing.");
+}
+
+if (config.imageFileTypes && config.imageDestination) {
+  var images = extractFiles(config.imageFileTypes, config.source);
+  moveFiles(images, config.imageDestination);
+}
+
+if (config.videoFileTypes && config.videoDestination) {
+  var videos = extractFiles(config.videoFileTypes, config.source);
+  moveFiles(videos, config.videoDestination);
+}
+
+
+function extractFiles(type, source){
+  var files = {};
+  for (var i = 0; i < type.length; i++) {
+    files[type[i]] = getFilesIn(source, type[i]);
+    console.log(type[i], files[type[i]].length);
+  }
+  return files;
 }
 
 function getFilesIn(dir, matching){
   return shell.find(dir).filter(
     function(file) {
-      return file.indexOf(matching) > -1;
-    });
+      return file.toLowerCase().indexOf(matching) > -1;
+    }
+  );
 }
 
-for (var i = 0; i < config.imageFileTypes.length; i++) {
-  files[config.imageFileTypes[i]].map(function(file){
-
+function moveFiles(list, destination) {
+//  console.log(list);
+  console.log(Object.keys(list));
+    Object.keys(list).forEach(function(extension){
+      //console.log(extension, list[extension]);
+    list[extension].map(function(file){
       if (config.verboseMode) {
-        console.log("Moving", file);
+        console.log("copy ", file, 'to ', destination);
       }
-      shell.cp( file, config.destination);
-
+      if (file && typeof file === "string") {
+        shell.mv(file, destination);
+      } else {
+        console.log(file, " NOT Adestination STRING");
+      }
+    });
   });
 }
-

@@ -3,14 +3,27 @@
   "restrictSize": false,
   "sizeMinWidth": 768,
   "sizeMinHeight": 768,
-  "photosLibrary": "/some/directory/",
+  "source": "/some/directory/",
   "imageFileTypes": [
     ".jpg",
-    ".JPG",
     ".jpeg",
     ".png",
-    ".PNG",
     ".gif"
   ],
-  "destination": "/place/to/store/photos/"
+  "videoFileTypes": [
+    ".mov",
+    ".mp4",
+    ".m4v",
+    ".mpg",
+    ".mpeg",
+    ".mkv",
+    ".avi",
+    ".wmv",
+    ".asf",
+    ".flv",
+    ".3gp",
+    ".avchd"
+  ],
+  "imageDestination": "/place/to/store/photos/",
+  "videoDestination": "/place/to/store/videos/"
 }
