@@ -31,8 +31,12 @@ For photos this tool can also rename/ store them based on year / month / day and
 
 ## How to use
 
+**DISCLAIMER - THIS IS SOME FRESH SOFTWARE** 
+Try using the provided `test-folder` to get your bearings, also remember to make a backup before trying on your own photos (until you get comfortable)
+
 - Duplicate `config-sample.json` and name it `config.json`
-- Minimum config: Setup a source and destination in `config.json`
+
+- Minimum config: Setup a `sourceFolder` and `imageDestinationFolder` in `config.json`
 
 - Commands (run in your terminal while inside the root of the `archival` directory)
 	 - **`npm run extract`** - extracts all image files recursively inside `sourceFolder` and places them flat in `imageDestinationFolder`/`videoDestinationFolder`
