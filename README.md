@@ -7,7 +7,7 @@ For photos this tool can also rename/ store them based on year / month / day and
 
 ** Tested on Mac OS X and Ubuntu**
 
-### Prerequisites
+## Prerequisites
 
 - Node.js
   - [Install Node.js](https://nodejs.org/en/)
@@ -21,16 +21,22 @@ For photos this tool can also rename/ store them based on year / month / day and
 
 
 
-### How to use
+## How to use
 
 - Duplicate `config-sample.json` and name it `config.json`
 - Minimum config: Setup a source and destination in `config.json`
 
 - Commands (run in your terminal while inside the root of the `archival` directory)
-	 - **`npm run extract`** - extracts all image files recursively inside source and places them flat in destination
-	 - **`npm run fix-filenames`** - runs in the destination folder and uses exif data to rename all the images it can to this format: devicename_date.extension
-	 - **`npm run remove-small`** - runs in destination directory and removes all files under the minimum width and height thresholds set in `config.json`
+	 - **`npm run extract`** - extracts all image files recursively inside `sourceFolder` and places them flat in `imageDestinationFolder`/`videoDestinationFolder`
+ 	 - **`npm run dedupe`** - removes duplicate images (even with different names) from the `imageDestinationFolder` (be careful there is no undo)
+	 - **`npm run fix-filenames`** - runs in the `imageDestinationFolder` folder and uses exif data to rename all the images it can to this format: `devicename date time-#.extension` example: `iPhone 6 2016-06-09 10.11.38-1.jpg`
+	 - **`npm run remove-small`** - runs in imageDestinationFolder directory and removes all files under the minimum width and height thresholds set in `config.json`
 
+## Feature requests
+
+- Setup `dedupe` to move duplicates to a 'trash' folder instead of deleting them.
+- Add camera raw file extensions
+- Move image / video file extensions to different json file so they can be updated independently of `config.json`
 
 
 ## Contributing

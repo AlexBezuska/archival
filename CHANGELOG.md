@@ -2,11 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.3.0] - 2017-05-26
+### Added
+- Add **`npm run dedupe`** command which removes duplicate images (even with different names) from the `imageDestinationFolder` (be careful there is no undo)
+
 ## [2.2.0] - 2017-05-26
 ### Added
 - Add test-folder containing sample images, make default config use test-folder.
 This closes [issue 1](https://github.com/AlexBezuska/archival/issues/1) by [benwiley4000](https://github.com/benwiley4000)
-
 
 ## [2.1.0] - 2017-05-26
 ### Added
