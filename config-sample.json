@@ -9,7 +9,11 @@
     ".jpg",
     ".jpeg",
     ".png",
-    ".gif"
+    ".gif",
+    ".tif",
+    ".tiff",
+    ".bmp",
+    ".nef"
   ],
   "videoFileTypes": [
     ".mov",

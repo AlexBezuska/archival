@@ -2,13 +2,18 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0] - 2017-05-26
+
+### Added
+- add .tif, .tiff, .bmp, and .nef(Nikon raw photo) file formats.
+
 ## [2.0.0] - 2017-05-26
 ### Fixed
 - `npm run extract` is now a huge amount faster by using the unix `find` command to find files instead of Node
 ### Added
 - Flag in `config.json` to called `moveFiles`, if true files will be moved to the destination folders, if false they will only be copied to the destination folders.
 ### API Change
-- Naming in `config.json` changed to help with clarity: 
+- Naming in `config.json` changed to help with clarity:
   -`source` is now `sourceFolder`
   -`imageDestination` is now `imageDestinationFolder`
   -`videoDestination` is now `videoDestinationFolder`
