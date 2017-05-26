@@ -1,9 +1,10 @@
 {
   "verboseMode": true,
   "restrictSize": false,
+  "moveFiles": false,
   "sizeMinWidth": 768,
   "sizeMinHeight": 768,
-  "source": "/some/directory/",
+  "sourceFolder": "/some/directory/",
   "imageFileTypes": [
     ".jpg",
     ".jpeg",
@@ -24,6 +25,6 @@
     ".3gp",
     ".avchd"
   ],
-  "imageDestination": "/place/to/store/photos/",
-  "videoDestination": "/place/to/store/videos/"
+  "imageDestinationFolder": "/place/to/store/photos/",
+  "videoDestinationFolder": "/place/to/store/videos/"
 }
