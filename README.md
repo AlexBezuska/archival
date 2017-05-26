@@ -42,6 +42,9 @@ For photos this tool can also rename/ store them based on year / month / day and
 
 ## Feature requests
 
+- Image sorting - Automatically sort images into folder structure based on /YEAR/MONTH/DAY/ they were taken.
+  - example: `/2016/06/09/iPhone 6 2016-06-09 10.11.38-1.jpg`
+- Group common npm script commands to form chains (workflows) ex extract > dedupe > remove-small > fix-filenames > sort-by-date
 - Setup `dedupe` to move duplicates to a 'trash' folder instead of deleting them.
 - Add camera raw file extensions
 - Move image / video file extensions to different json file so they can be updated independently of `config.json`
