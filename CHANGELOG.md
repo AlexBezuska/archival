@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [2.3.0] - 2017-05-26
 ### Added
-- Add **`npm run dedupe`** command which removes duplicate images (even with different names) from the `imageDestinationFolder` (be careful there is no undo)
+- Add **`npm run dedupe`** command which removes duplicate images (even with different names) from the `imageDestinationFolder` (be careful there is no undo) (requires new rdfind prerequisite - check [README.md](README.md))
 
 ## [2.2.0] - 2017-05-26
 ### Added
