@@ -4,7 +4,7 @@
   "moveFiles": false,
   "sizeMinWidth": 768,
   "sizeMinHeight": 768,
-  "sourceFolder": "/some/directory/",
+  "sourceFolder": "./test-folder/source/",
   "imageFileTypes": [
     ".jpg",
     ".jpeg",
@@ -29,6 +29,6 @@
     ".3gp",
     ".avchd"
   ],
-  "imageDestinationFolder": "/place/to/store/photos/",
-  "videoDestinationFolder": "/place/to/store/videos/"
+  "imageDestinationFolder": "./test-folder/destination/",
+  "videoDestinationFolder": "",
 }
