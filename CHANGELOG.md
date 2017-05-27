@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [2.3.1] - 2017-05-26
+### Fix
+- fix bug where dedupe and fix-dates still used old config property names
+
 ## [2.3.0] - 2017-05-26
 ### Added
 - Add **`npm run dedupe`** command which removes duplicate images (even with different names) from the `imageDestinationFolder` (be careful there is no undo) (requires new rdfind prerequisite - check [README.md](README.md))

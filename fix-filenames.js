@@ -1,16 +1,16 @@
 var shell = require("shelljs");
 var config = require("./config");
 
-if (!config.imageDestination && !config.videoDestination) {
-  console.log("no 'imageDestination' or 'videoDestination' set in config.json... doing nothing.")
+if (!config.imageDestinationFolder && !config.videoDestinationFolder) {
+  console.log("no 'imageDestinationFolder' or 'videoDestinationFolder' set in config.json... doing nothing.")
 }
 
-if (config.videoDestination) {
-  shell.exec('DESTINATION=' + config.videoDestination
+if (config.videoDestinationFolder) {
+  shell.exec('DESTINATION=' + config.videoDestinationFolder
   +' ./fix-filenames.sh');
 }
 
-if (config.videoDestination) {
-  shell.exec('DESTINATION=' + config.imageDestination
+if (config.imageDestinationFolder) {
+  shell.exec('DESTINATION=' + config.imageDestinationFolder
   +' ./fix-filenames.sh');
 }

@@ -1,8 +1,8 @@
 var shell = require("shelljs");
 var config = require("./config");
 
-dedupe(config.imageDestination);
-dedupe(config.videoDestination);
+dedupe(config.imageDestinationFolder);
+dedupe(config.videoDestinationFolder);
 
 function dedupe(directory){
   console.log("Let's remove duplicates from ", directory, "...")
