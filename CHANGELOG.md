@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [2.3.3] - 2017-05-30
+### Fix
+- fix bug where dedupe was names redupe
+
+
 ## [2.3.2] - 2017-05-30
 ### Fix
 - fix bug where the extract command was leaving files behind due to the file extensions not being case insensitive

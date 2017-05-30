@@ -1,11 +1,11 @@
 {
   "name": "archival",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "extract": "node extract.js",
-    "redupe": "node dedupe.js",
+    "dedupe": "node dedupe.js",
     "fix-filenames": "node fix-filenames.js",
     "remove-small": "node remove-small-images.js"
   },
